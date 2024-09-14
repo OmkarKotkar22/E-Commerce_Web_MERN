@@ -1,0 +1,111 @@
+.shopcategory-banner{
+    display: block;
+    margin: 30px auto;
+    width: 88%;
+}
+
+.shopcategory-indexSort{
+    display: flex;
+    margin: 0px 170px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.shopcategory-indexSort p span{
+    font-weight: 600;
+}
+
+.shopcateory-sort{
+    padding: 10px 20px;
+    border-radius: 40px;
+    border: 1px solid #888;
+}
+
+.shopcategory-products {
+    margin: 20px 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 80px;
+    gap: 10px;
+}
+
+.shopcategory-loadmore{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 150px auto;
+    width: 233px;
+    height: 69px;
+    border-radius: 75px;
+    background: #ffb190;
+    color: #444444;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+@media(max-width:1280px) {
+    .shopcategory-banner{
+        margin: 20px auto;
+        width: 90%;
+    }
+    .shopcategory-indexSort{
+        width: 90%;
+        margin: auto;
+    }
+    .shopcateory-sort{
+        padding: 5px 10px;
+        font-size: 12px;
+    }
+    .shopcategory-indexSort p{
+        font-size: 12px;
+    }
+    .shopcategory-products{
+        width: 90px;
+        margin: 20px 90px;
+        row-gap: 40px;   
+    }
+    .shopcategory-products .item{
+        margin: auto;
+    }
+    .shopcategory-loadmore{
+        margin: 100px auto;
+        width: 200px;
+        height: 60px;
+        font-size: 16px;
+    }
+}
+
+@media(max-width:1024px) {
+    .shopcategory-products{
+        margin: 20px 70px;   
+    }
+}
+
+@media(max-width:800px) {
+    .shopcategory-banner{
+        width: 95%;
+    }
+    .shopcategory-products{
+        width: 75%;
+        margin: 20px 70px;   
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+    }
+    .shopcategory-loadmore{
+        margin: 60px auto;
+        width: 150px;
+        height: 40px;
+        font-size: 13px;
+    }
+
+}
+
+@media(max-width:500px) {
+    .shopcategory-products{
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        margin: 20px 70px; 
+        margin-top: 30px;  
+    }
+}
